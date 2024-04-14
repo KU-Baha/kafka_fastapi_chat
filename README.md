@@ -1,7 +1,6 @@
 # FastAPI + Kafka chat Application
 
-This is a basic template for FastAPI projects configured to use Docker Compose, Makefile, FastAPI, Kafka, MongoDB, and
-Pytest
+Docker Compose, Makefile, FastAPI, Kafka, MongoDB, and Pytest
 
 ## Requirements
 
