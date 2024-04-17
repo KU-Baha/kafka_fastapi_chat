@@ -5,12 +5,12 @@ from domain.events.chat import NewMessageReceivedEvent
 from domain.values.chat import Text, Title
 
 
-@dataclass(eq=True, kw_only=True)
+@dataclass(eq=False)
 class Message(BaseEntity):
     text: Text
 
 
-@dataclass(eq=True, unsafe_hash=True, kw_only=True)
+@dataclass(eq=True)
 class Chat(BaseEntity):
     title: Title
     messages: list[Message] = field(
